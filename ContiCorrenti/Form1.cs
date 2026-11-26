@@ -16,5 +16,30 @@ namespace ContiCorrenti
         {
             InitializeComponent();
         }
+        string[] arrayNomi = new string[10];
+        int[] arraySaldo = new int[10];
+        int[] arrayNumeroConto = new int[10];
+
+        private void btn_invioDati_Click(object sender, EventArgs e)
+        {
+            string nome = txt_nome.Text;
+            int numeroConto = Convert.ToInt32(txt_nConto.Text);
+            int saldo = Convert.ToInt32(txt_saldo.Text);
+            int contatore = 0;
+
+            arrayNomi[contatore] = nome;
+            arraySaldo[contatore] = saldo;
+            arrayNumeroConto[contatore] = numeroConto;
+
+            lst_nomi.Items.Add(nome);
+            lst_nConto.Items.Add(numeroConto);
+            lst_Saldo.Items.Add(saldo);
+
+            txt_nConto.Clear();
+            txt_saldo.Clear();
+            txt_nome.Clear();
+
+            contatore++;
+        }
     }
 }
