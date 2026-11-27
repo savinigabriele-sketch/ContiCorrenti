@@ -20,7 +20,7 @@ namespace ContiCorrenti
         int[] arraySaldo = new int[10];
         int[] arrayNumeroConto = new int[10];
 
-        private void btn_invioDati_Click(object sender, EventArgs e)
+        private void btn_invioDati_Click_1(object sender, EventArgs e)
         {
             string nome = txt_nome.Text;
             int numeroConto = Convert.ToInt32(txt_nConto.Text);
